@@ -62,7 +62,7 @@ const Profile = () => {
       .then((res) => setUser(res.data))
       .catch(() => {
         localStorage.removeItem("token");
-        navigate("/login");
+        navigate("/");
       });
   }, [navigate]);
 
