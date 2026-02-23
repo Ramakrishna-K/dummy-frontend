@@ -70,7 +70,7 @@ const Profile = () => {
         setUser(res.data.user || res.data);
       } catch (err) {
         console.log("Unauthorized");
-        navigate("/login");
+        navigate("/");
       }
     };
 
